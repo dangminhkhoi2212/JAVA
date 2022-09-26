@@ -69,9 +69,9 @@ public class DSSinhVien {
 			}
 		return maxDiemTB;
 	}
-	public String firstName(int i) {
-		int p=DS[i].layHoTen().lastIndexOf(" ");
-		String firstName=DS[i].layHoTen().substring(p+1);
+	public String firstName(String name) {
+		int p=name.lastIndexOf(" ");
+		String firstName=name.substring(p+1);
 		return firstName.toLowerCase();
 	}
 	public void swap(int i, int j) {
@@ -82,7 +82,7 @@ public class DSSinhVien {
 	public void sortName() {
 		for(int i=0; i<length; i++) {
 			for(int j=i+1; j<length; j++) {
-				if(firstName(i).compareTo(firstName(j))>0) {
+				if(firstName(DS[i].layHoTen()).compareTo(firstName(DS[j].layHoTen()))>0) {
 					swap(i, j);
 				}
 			}
