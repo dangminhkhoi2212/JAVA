@@ -33,6 +33,7 @@ public class SDPhanSo {
 	}
 	
 	public void sapXep(PhanSo ds[]) {
+		SDPhanSo sd=new SDPhanSo();
 		for(int i=0; i<ds.length; i++)
 			for(int j=i+1; j<ds.length; j++)
 				if(ds[i].giaTriThuc()>ds[j].giaTriThuc()) {

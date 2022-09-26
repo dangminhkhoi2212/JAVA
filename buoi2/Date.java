@@ -12,8 +12,16 @@ public class Date {
 		m=m1;
 		y=y1;
 	}
+	public Date(Date date) {
+		d=date.d;
+		m=date.m;
+		y=date.y;
+	}
 	public void hienThi(){
-		System.out.println(d+"/"+m+"/"+y); 
+		System.out.println(d+"/"+m+"/"+y);
+	}
+	public String toString() {
+		return (d+"/"+m+"/"+y);
 	}
 	public boolean namNhuan(){
 		if((y%4 ==0 && y%100!=0) || y%400==0)
@@ -41,7 +49,7 @@ public class Date {
 			y=sc.nextInt();
 		}while(!hopLe());
 	}
-	public Date ngayHomSau(){
+	public Date congNgay(){
 		Date homSau=new Date(d, m, y);
 		(homSau.d)++;
 		if(!homSau.hopLe()){
@@ -57,7 +65,7 @@ public class Date {
 	public Date congNgay(int n){
 		Date ngayMoi=new Date(d, m, y);
 		for(int i=1; i<=n; i++){
-			ngayMoi=ngayMoi.ngayHomSau();			
+			ngayMoi=ngayMoi.congNgay();
 		}
 		return ngayMoi;
 	}

@@ -93,10 +93,5 @@ public class PhanSo {
 		PhanSo ketqua=new PhanSo(tu, mau);
 		return ketqua.Cong(A);
 	}
-	public PhanSo swap(PhanSo p1) {
-		PhanSo temp=p1;
-		tu=p1.tu;
-		mau=p1.mau;
-		return temp;
-	}
+	
 }
