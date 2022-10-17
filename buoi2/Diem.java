@@ -16,7 +16,7 @@ public class Diem {
 		x=d.x;
 		y=d.y;
 	}
-	public void  nhapDiem(){
+	public void  nhap(){
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Nhap toa do x: ");
 		x=sc.nextInt();
@@ -27,9 +27,10 @@ public class Diem {
 		System.out.println("(" +x+", "+y+")");
 	}
 	public String toString() {
-		return ("(" +x+", "+y+")");
+		return ("(" +x+", "+y+")"+"\n");
 	}
 	public void doiDiem(int dx, int dy){
+		System.out.println("Diem sau khi doi la:");
 		x+=dx;
 		y+=dy;
 	}

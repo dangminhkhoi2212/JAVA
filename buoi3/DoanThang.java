@@ -22,9 +22,9 @@ public class DoanThang {
 	}
 	public void nhap() {
 		System.out.println("Nhap toa do d1:");
-		d1.nhapDiem();
+		d1.nhap();
 		System.out.println("Nhap toa do d2:");
-		d2.nhapDiem();
+		d2.nhap();
 	}
 	public void hienThi() {
 		System.out.println("["+d1+", "+d2+"]");

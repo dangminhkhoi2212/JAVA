@@ -26,7 +26,7 @@ public class DSSinhVien {
 			SinhVien a=new SinhVien();
 			System.out.println("Nhap sinh vien thu "+(i+1));
 			
-			a.nhapSV();
+			a.nhap();
 			System.out.println("Nhap ten hoc phan:");
 			String tenHP=sc.nextLine();
 			System.out.println("Nhap diem hoc phan:");
@@ -42,7 +42,7 @@ public class DSSinhVien {
 		else {
 			for(int i=0; i<length; i++) {
 				System.out.println("\nSinh vien thu "+(i+1));
-				DS[i].inSV();
+				DS[i].in();
 			}
 		}
 	}
